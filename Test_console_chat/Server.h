@@ -12,9 +12,10 @@ class Server
 {
 public:
 	vector<Client> users;
+	vector<Client*> online_users;
 public:
 	bool Registration(string username, string email, string password);
-    // Вывод списка всех пользователей
+	Client* Login(string email, string password);
 	void listUsers();
 
 };
