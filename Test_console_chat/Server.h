@@ -17,6 +17,7 @@ public:
 	bool Registration(string username, string email, string password);
 	Client* Login(string email, string password);
 	void listUsers();
+	void onlineUsers();
 
 };
 

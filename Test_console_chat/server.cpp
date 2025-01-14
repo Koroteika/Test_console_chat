@@ -40,3 +40,15 @@ void Server::listUsers()
 		cout << "Email: " << user._email << ", Name: " << user._username << ", Password: "<<user._password<<"\n";
 	}
 }
+
+void Server::onlineUsers()
+{
+	if (online_users.empty()) {
+		cout << "There are no online users. \n";
+		return;
+	}
+	cout << "List of online users: \n";
+	for (const auto& user : online_users) {
+		cout << "Email: " << user->_email << ", Name: " << user->_username << "\n";
+	}
+}
