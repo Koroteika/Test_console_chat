@@ -59,6 +59,7 @@ int main()
 		default:
 			active = false;
 			cout << "Programm quit \n";
+			cout << "test change" << "\n";
 			break;
 		}
 	}
